@@ -1,0 +1,55 @@
+"*":
+  "atom-fuzzy-grep":
+    grepCommandString: "pt -i --nocolor --nogroup --column"
+  core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    packagesWithKeymapsDisabled: []
+    telemetryConsent: "no"
+  editor:
+    fontSize: 13
+    invisibles:
+      eol: " "
+    showInvisibles: true
+  "exception-reporting":
+    userId: "18f74ed7-0efd-4083-8dfc-7284413ba692"
+  "goto-definition":
+    contextMenuDisplayAtFirst: false
+  "js-hyperclick":
+    extensions: [
+      ".js"
+      ".jsx"
+    ]
+    jumpToImport: true
+  "linter-flow":
+    executablePath: "/usr/local/Cellar/flow/0.46.0/bin/flow"
+  "linter-ui-default":
+    panelHeight: 114
+    showPanel: true
+  minimap: {}
+  nuclide:
+    "nuclide-diagnostics-ui": {}
+    "nuclide-file-tree":
+      allowKeyboardPrefixNavigation: false
+      hideIgnoredNames: false
+      showOpenFiles: false
+      showUncommittedChanges: false
+    "nuclide-flow":
+      canUseFlowBin: true
+      warnOnNotInstalled: false
+    "nuclide-home":
+      showHome: false
+  welcome:
+    showOnStartup: false

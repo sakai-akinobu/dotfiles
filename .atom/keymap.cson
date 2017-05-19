@@ -1,0 +1,26 @@
+# body
+'body':
+  'ctrl-n': 'pane:show-next-item'
+  'ctrl-p': 'pane:show-previous-item'
+  'f1': 'tree-view:toggle'
+
+# atom-text-editor.vim-mode-plus:not(.insert-mode)
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  'cmd-enter': 'hyperclick:confirm-cursor'
+  'ctrl-w 0': 'tree-view:toggle-focus'
+  'ctrl-o': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-r': 'recent-files-fuzzy-finder:toggle-finder'
+
+# tree-view
+'.tree-view':
+  'g g': 'core:move-to-top'
+  'shift-g': 'core:move-to-bottom'
+  'ctrl-w l': 'tree-view:toggle-focus'
+  's p': 'tree-view:open-selected-entry-down'
+  'v s': 'tree-view:open-selected-entry-right'
+
+# fuzzy-finder
+'.fuzzy-finder atom-text-editor':
+  'ctrl-v': 'pane:split-right'
+  'ctrl-s': 'pane:split-down'
+  'ctrl-[': 'core:cancel'
