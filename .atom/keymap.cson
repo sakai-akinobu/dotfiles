@@ -9,7 +9,9 @@
   'cmd-enter': 'hyperclick:confirm-cursor'
   'ctrl-w 0': 'tree-view:toggle-focus'
   'ctrl-o': 'fuzzy-finder:toggle-file-finder'
-  'ctrl-r': 'recent-files-fuzzy-finder:toggle-finder'
+  'ctrl-l': 'recent-files-fuzzy-finder:toggle-finder'
+  't d': 'core:close'
+  'ctrl-%': 'copy-path:copy-project-relative-path'
 
 # tree-view
 '.tree-view':
@@ -17,7 +19,8 @@
   'shift-g': 'core:move-to-bottom'
   'ctrl-w l': 'tree-view:toggle-focus'
   's p': 'tree-view:open-selected-entry-down'
-  'v s': 'tree-view:open-selected-entry-right'
+  'v s p': 'tree-view:open-selected-entry-right'
+  'h': 'nerd-treeview:close-parent'
 
 # fuzzy-finder
 '.fuzzy-finder atom-text-editor':

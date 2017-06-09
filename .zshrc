@@ -131,3 +131,15 @@ alias icdiff='icdiff --no-bold -H -N'
 
 # homebrew
 source ~/.homebrew
+
+# mecab
+export MECAB_PATH=/usr/local/Cellar/mecab/0.996/lib/libmecab.dylib
+
+# peco
+function peco-history-selection() {
+    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+    CURSOR=$#BUFFER
+    zle reset-prompt
+}
+zle -N peco-history-selection
+bindkey '^R' peco-history-selection

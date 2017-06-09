@@ -16,6 +16,10 @@
       "source.python": [
         "BUCK"
       ]
+    disabledPackages: [
+      "linter-sass-lint"
+      "linter-haml"
+    ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
   editor:
@@ -35,8 +39,11 @@
     jumpToImport: true
   "linter-flow":
     executablePath: "/usr/local/Cellar/flow/0.46.0/bin/flow"
+  "linter-sass-lint":
+    configFile: ".scss-lint.yml"
+    resolvePathsRelativeToConfig: true
   "linter-ui-default":
-    panelHeight: 114
+    panelHeight: 69
     showPanel: true
   minimap: {}
   nuclide:
@@ -51,5 +58,9 @@
       warnOnNotInstalled: false
     "nuclide-home":
       showHome: false
+  "vim-mode-plus":
+    incrementalSearch: true
+  "vim-mode-plus-ex-mode":
+    notifiedUseExMode: true
   welcome:
     showOnStartup: false
