@@ -1,10 +1,11 @@
 syntax on
 set number
 set ruler
-set tabstop=4
-set softtabstop=4
+set tabstop=2
+set softtabstop=2
 set autoindent
 set smartindent
+set expandtab
 set hlsearch
 set ignorecase
 set smartcase
@@ -93,8 +94,6 @@ NeoBundle 'slim-template/vim-slim'
 
 " colors
 NeoBundle 'w0ng/vim-hybrid'
-NeoBundle 'nanotech/jellybeans.vim'
-NeoBundle 'jpo/vim-railscasts-theme'
 
 call neobundle#end()
 

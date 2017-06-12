@@ -1,6 +1,8 @@
 "*":
   "atom-fuzzy-grep":
     grepCommandString: "pt -i --nocolor --nogroup --column"
+  "autocomplete-plus":
+    useCoreMovementCommands: false
   core:
     allowPendingPaneItems: false
     audioBeep: false
@@ -58,6 +60,13 @@
       warnOnNotInstalled: false
     "nuclide-home":
       showHome: false
+  "platformio-ide-terminal":
+    style:
+      fontSize: "12"
+  "recent-files-fuzzy-finder":
+    maxFilesToRemember: 300
+  "tree-view":
+    hideVcsIgnoredFiles: true
   "vim-mode-plus":
     incrementalSearch: true
   "vim-mode-plus-ex-mode":
