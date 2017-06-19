@@ -46,7 +46,6 @@
     resolvePathsRelativeToConfig: true
   "linter-ui-default":
     panelHeight: 69
-    showPanel: true
   minimap: {}
   nuclide:
     "nuclide-diagnostics-ui": {}
