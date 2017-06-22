@@ -45,3 +45,7 @@
   'ctrl-p': 'core:move-up'
   'ctrl-v': 'pane:split-right'
   'ctrl-s': 'pane:split-down'
+
+'.symbols-view':
+  'ctrl-n': 'core:move-down'
+  'ctrl-p': 'core:move-up'
