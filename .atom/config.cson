@@ -63,7 +63,7 @@
     style:
       fontSize: "12"
   "recent-files-fuzzy-finder":
-    maxFilesToRemember: 300
+    maxFilesToRemember: 500
   "tree-view":
     hideVcsIgnoredFiles: true
   "vim-mode-plus":

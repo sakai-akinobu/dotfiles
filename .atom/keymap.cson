@@ -7,6 +7,9 @@
   't d': 'core:close'
   'ctrl-[': 'core:cancel'
 
+'atom-workspace':
+  'alt-cmd-f': 'fuzzy-grep:toggle'
+
 'atom-text-editor.vim-mode-plus.normal-mode':
   'shift-o': 'unset!'
 
@@ -47,5 +50,9 @@
   'ctrl-s': 'pane:split-down'
 
 '.symbols-view':
+  'ctrl-n': 'core:move-down'
+  'ctrl-p': 'core:move-up'
+
+'.atom-fuzzy-grep':
   'ctrl-n': 'core:move-down'
   'ctrl-p': 'core:move-up'
