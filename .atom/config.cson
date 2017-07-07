@@ -64,6 +64,10 @@
       fontSize: "12"
   "recent-files-fuzzy-finder":
     maxFilesToRemember: 500
+  "sync-settings":
+    _lastBackupHash: "aae8f52f69a454844ae6c0bbe7f1305edb81fa24"
+    gistId: "b9a67b38e2c66cc59a8df6b3525e0ece"
+    personalAccessToken: "5881b34e692c89af1aed13d668e43853f9b13161"
   "tree-view":
     hideVcsIgnoredFiles: true
   "vim-mode-plus":
