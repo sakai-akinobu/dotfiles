@@ -9,3 +9,7 @@
 # atom.workspace.observeTextEditors (editor) ->
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
+atom.packages.onDidDeactivatePackage (pack) ->
+  # nuclide-file-tree から tree-view が disable にされるので enable にしなおす
+  return unless pack.name == 'tree-view'
+  atom.packages.enablePackage('tree-view')

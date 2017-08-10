@@ -4,11 +4,12 @@
   'f1': 'tree-view:toggle'
   'ctrl-o': 'fuzzy-finder:toggle-file-finder'
   'ctrl-l': 'recent-files-fuzzy-finder:toggle-finder'
-  't d': 'core:close'
-  'ctrl-[': 'core:cancel'
 
 'atom-workspace':
   'alt-cmd-f': 'fuzzy-grep:toggle'
+  'ctrl-l': 'unset!'
+  'ctrl-0': 'tree-view:toggle-focus'
+  'ctrl-[': 'core:cancel'
 
 'atom-text-editor.vim-mode-plus.normal-mode':
   'shift-o': 'unset!'
@@ -20,6 +21,7 @@
   'ctrl-w 0': 'tree-view:toggle-focus'
   'ctrl-%': 'copy-path:copy-project-relative-path'
   'f2': 'symbols-view:toggle-file-symbols'
+  't d': 'core:close'
 
 'atom-text-editor.vim-mode-plus.insert-mode':
   'ctrl-n': 'autocomplete-plus:move-down'
