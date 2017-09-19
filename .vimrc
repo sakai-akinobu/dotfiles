@@ -12,11 +12,12 @@ set ignorecase
 set smartcase
 set wrapscan
 set laststatus=2
-set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P%{ALEGetStatusLine()}
 set list
 set listchars=tab:>-,trail:_
 set vb t_vb=
 set t_Co=256
+set ambiwidth=double
 
 filetype plugin on
 
@@ -81,7 +82,7 @@ NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/unite-outline'
-NeoBundle 'scrooloose/syntastic'
+NeoBundle 'w0rp/ale'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-endwise'
@@ -92,6 +93,11 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'toyamarinyon/vim-swift'
 NeoBundle 'slim-template/vim-slim'
+NeoBundleLazy 'flowtype/vim-flow', {
+\   'autoload': {
+\     'filetypes': 'javascript'
+\   }
+\ }
 
 " colors
 NeoBundle 'w0ng/vim-hybrid'
@@ -218,13 +224,19 @@ nnoremap <silent> <F2> :Unite outline<CR>
 map <silent> <F1> <esc>:NERDTreeToggle<cr>
 
 """"""""""""""""""""
-" Syntastic
+" ALE (Asynchronous Lint Engine)
 """"""""""""""""""""
-let g:syntastic_mode_map = {
-    \ 'mode': 'active',
-    \ 'passive_filetypes': []
-    \ }
-let g:syntastic_javascript_checkers = ['jshint', 'jslint']
+let g:ale_linters = {
+  \ 'javascript': ['eslint', 'flow'],
+  \ 'scss': ['stylelint'],
+\ }
+let g:ale_sign_column_always = 1
+
+""""""""""""""""""""
+" vim-flow
+""""""""""""""""""""
+let g:flow#autoclose = 1
+"let g:flow#showquickfix = 0
 
 """""""""""""""""""
 " quickrun.vim

@@ -24,7 +24,6 @@
       "linter-flow"
       "linter"
       "linter-scss-lint"
-      "nuclide-file-tree"
     ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
@@ -50,7 +49,7 @@
     configFile: ".scss-lint.yml"
     resolvePathsRelativeToConfig: true
   "linter-ui-default":
-    panelHeight: 215
+    panelHeight: 287
   minimap: {}
   nuclide:
     "atom-ide-code-format":
@@ -82,9 +81,9 @@
     maxFilesToRemember: 500
     restoreSession: true
   "sync-settings":
-    _lastBackupHash: "682a8e841c114ec6102e79fb4d1391d0a57c3347"
+    _lastBackupHash: "5f64a7ac709728a5f7657b2daf41d73e14bef54a"
     gistId: "77d71f3431d3c1ca9e462b40e864f041"
-    personalAccessToken: "942ff37c95370ede8a2e9c2a981ebbc8b7330431"
+    personalAccessToken: "1d96b9d9eb7c658f1afe627d51e0b4ca548b51b2"
   "tree-view":
     hideVcsIgnoredFiles: true
   "vim-mode-plus":
