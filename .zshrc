@@ -143,3 +143,10 @@ function peco-history-selection() {
 }
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
+
+function grep-peco-atom() {
+    out=`pt --nogroup $1 | peco | awk -F : '{print $1":"$2}'`
+    if [ $out ]; then
+        atom $out
+    fi
+}
