@@ -11,6 +11,11 @@
   'ctrl-0': 'tree-view:toggle-focus'
   'ctrl-[': 'core:cancel'
 
+'atom-text-editor:not([mini])':
+  'ctrl-y': 'clip-history:paste'
+  'cmd-y': 'clip-history:paste-newer'
+  'ctrl-Y': 'clip-history:paste-last'
+
 'atom-text-editor.vim-mode-plus.normal-mode':
   'shift-o': 'unset!'
 
