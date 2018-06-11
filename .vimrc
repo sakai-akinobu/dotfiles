@@ -95,6 +95,13 @@ nnoremap <silent> <C-g> :Denite grep<CR>
 nnoremap <silent> <C-l> :Denite file_mru<CR>
 nnoremap <silent> <S-o> :Denite buffer<CR>
 
+call denite#custom#var('grep', 'command', ['pt'])
+call denite#custom#var('grep', 'default_opts', ['--nogroup', '--nocolor', '--smart-case'])
+call denite#custom#var('grep', 'recursive_opts', [])
+call denite#custom#var('grep', 'pattern_opt', [])
+call denite#custom#var('grep', 'separator', ['--'])
+call denite#custom#var('grep', 'final_opts', [])
+
 """"""""""""""""""""
 " deoplete.nvim
 """"""""""""""""""""
