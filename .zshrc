@@ -95,7 +95,8 @@ export PATH=/usr/local/bin:$PATH
 alias ls='ls -GF'
 alias ll='ls -la'
 alias lv="lv -c -E'vim -c %d'"
-alias vi="vim"
+alias vi="nvim"
+alias vim="nvim"
 alias g="git"
 
 # PAGER
