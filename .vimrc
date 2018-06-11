@@ -59,6 +59,8 @@ if dein#load_state('~/.cache/dein')
  call dein#add('Shougo/neomru.vim')
  call dein#add('Shougo/neosnippet.vim')
  call dein#add('Shougo/neosnippet-snippets')
+ call dein#add('Shougo/unite.vim')
+ call dein#add('Shougo/unite-outline')
  call dein#add('w0rp/ale')
  call dein#add('pangloss/vim-javascript')
  call dein#add('othree/yajs.vim')
@@ -93,7 +95,7 @@ colorscheme hybrid
 nnoremap <silent> <C-o> :Denite file_rec<CR>
 nnoremap <silent> <C-g> :Denite grep<CR>
 nnoremap <silent> <C-l> :Denite file_mru<CR>
-nnoremap <silent> <S-o> :Denite buffer<CR>
+nnoremap <silent> <C-b> :Denite buffer<CR>
 
 call denite#custom#var('grep', 'command', ['pt'])
 call denite#custom#var('grep', 'default_opts', ['--nogroup', '--nocolor', '--smart-case'])
