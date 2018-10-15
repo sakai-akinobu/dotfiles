@@ -1,0 +1,37 @@
+[core]
+	editor = vim
+	pager = lv
+	ignorecase = false
+[alias]
+	st = status
+	br = branch
+	co = checkout
+	ci = commit
+	di = diff
+	dis = diff --staged
+	vdi = difftool --extcmd 'icdiff --no-bold -HN'
+	vdis = difftool --extcmd 'icdiff --no-bold -HN' --staged
+	l = log
+	g = grep
+[user]
+	name = sakai-akinobu
+	email = sakai.akinobu@gmail.com
+[pager]
+	log = diff-highlight | lv
+	show = diff-highlight | lv
+	diff = diff-highlight | lv
+	difftool = diff-highlight | lv
+[diff]
+	compactionHeuristic = true
+[color]
+	ui = true
+[color "grep"]
+	match = red
+	lineNumber = white
+	fileName = blue
+[difftool]
+	prompt = false
+[interactive]
+	diffFilter = diff-highlight
+[grep]
+	lineNumber = true
