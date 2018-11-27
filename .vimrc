@@ -95,7 +95,7 @@ colorscheme hybrid
 nnoremap <silent> <C-o> :Denite file_rec<CR>
 nnoremap <silent> <C-g> :Denite grep<CR>
 nnoremap <silent> <C-l> :Denite file_mru<CR>
-nnoremap <silent> <C-b> :Denite buffer<CR>
+nnoremap <silent> <S-o> :Denite buffer<CR>
 
 call denite#custom#var('grep', 'command', ['pt'])
 call denite#custom#var('grep', 'default_opts', ['--nogroup', '--nocolor', '--smart-case'])
