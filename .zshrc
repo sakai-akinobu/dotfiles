@@ -23,7 +23,7 @@ precmd () {
         LANG=en_US.UTF-8 vcs_info
             [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
             }
-            PROMPT="$GREEN%n@%m:$GREEN%~$DEFAULT "
+            PROMPT="${GREEN}λ:%m:$GREEN%~$DEFAULT "
             PROMPT2="\ "
             SPROMPT="$GREEN%r is correct? [n,y,a,e]:$DEFAULT"
             RPROMPT="$YELLOW%1(v|%1v|)$DEFAULT"
