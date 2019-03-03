@@ -119,7 +119,7 @@ let g:javascript_plugin_flow = 1
 """"""""""""""""""""
 " NERDTree
 """"""""""""""""""""
-map <silent> <F1> <esc>:NERDTreeToggle<cr>
+map <silent> <C-t> <esc>:NERDTreeToggle<cr>
 
 """"""""""""""""""""
 " lightline.vim
