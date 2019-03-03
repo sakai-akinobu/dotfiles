@@ -75,6 +75,7 @@ if dein#load_state('~/.cache/dein')
  call dein#add('scrooloose/nerdtree')
  call dein#add('itchyny/lightline.vim')
  call dein#add('w0ng/vim-hybrid')
+ call dein#add('mhartington/oceanic-next')
  if !has('nvim')
    call dein#add('roxma/nvim-yarp')
    call dein#add('roxma/vim-hug-neovim-rpc')
@@ -86,8 +87,8 @@ endif
 
 filetype plugin indent on
 syntax enable
-set background=dark
-colorscheme hybrid
+set termguicolors
+colorscheme OceanicNext
 
 """"""""""""""""""""
 " denite.nvim
