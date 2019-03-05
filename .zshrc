@@ -148,3 +148,10 @@ function grep-peco-atom() {
         atom $out
     fi
 }
+
+# XDG Base Directory Specification
+export XDG_CONFIG_HOME=$HOME/.config
+
+# pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
