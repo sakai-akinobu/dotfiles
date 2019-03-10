@@ -128,7 +128,7 @@ export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
 alias icdiff='icdiff --no-bold -H -N'
 
 # homebrew
-source ~/.homebrew
+[ -s "~/.homebrew_token" ] && source ~/.homebrew_token
 
 # mecab
 export MECAB_PATH=/usr/local/Cellar/mecab/0.996/lib/libmecab.dylib
