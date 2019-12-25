@@ -152,10 +152,6 @@ function grep-peco-atom() {
 # XDG Base Directory Specification
 export XDG_CONFIG_HOME=$HOME/.config
 
-# pyenv
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
 # lastify
 [ -f ~/.lastifyrc ] && source ~/.lastifyrc
 
