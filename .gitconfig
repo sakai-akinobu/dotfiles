@@ -23,6 +23,7 @@
   difftool = diff-highlight | lv
 [diff]
   compactionHeuristic = true
+  renameLimit = 3000
 [color]
   ui = true
 [color "grep"]
