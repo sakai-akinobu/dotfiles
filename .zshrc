@@ -154,8 +154,3 @@ export XDG_CONFIG_HOME=$HOME/.config
 
 # lastify
 [ -f ~/.lastifyrc ] && source ~/.lastifyrc
-
-YVM_INSTALL_DIR="/usr/local/opt/yvm" node "/usr/local/opt/yvm/yvm.js" configure-shell
-
-export YVM_DIR=/usr/local/opt/yvm
-[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
