@@ -54,7 +54,6 @@ if dein#load_state('~/.cache/dein')
  call dein#begin('~/.cache/dein')
 
  call dein#add('~/.cache/dein')
- call dein#add('Shougo/deoplete.nvim')
  call dein#add('Shougo/denite.nvim')
  call dein#add('Shougo/neomru.vim')
  call dein#add('Shougo/neosnippet.vim')
@@ -66,7 +65,6 @@ if dein#load_state('~/.cache/dein')
  call dein#add('pangloss/vim-javascript')
  call dein#add('othree/yajs.vim')
  call dein#add('MaxMEllon/vim-jsx-pretty')
- call dein#add('carlitux/deoplete-ternjs')
  call dein#add('wokalski/autocomplete-flow')
  call dein#add('slim-template/vim-slim')
  call dein#add('kchmck/vim-coffee-script')
@@ -105,11 +103,6 @@ call denite#custom#var('grep', 'recursive_opts', [])
 call denite#custom#var('grep', 'pattern_opt', [])
 call denite#custom#var('grep', 'separator', ['--'])
 call denite#custom#var('grep', 'final_opts', [])
-
-""""""""""""""""""""
-" deoplete.nvim
-""""""""""""""""""""
-let g:deoplete#enable_at_startup = 1
 
 """"""""""""""""""""
 " vim-javascript
