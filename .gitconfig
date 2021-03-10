@@ -36,3 +36,5 @@
   diffFilter = diff-highlight
 [grep]
   lineNumber = true
+[pull]
+  rebase = false
