@@ -60,20 +60,11 @@ if dein#load_state('~/.cache/dein')
  call dein#add('Shougo/neosnippet-snippets')
  call dein#add('Shougo/unite.vim')
  call dein#add('Shougo/unite-outline')
- call dein#add('w0rp/ale')
  call dein#add('leafgarland/typescript-vim')
  call dein#add('pangloss/vim-javascript')
- call dein#add('othree/yajs.vim')
  call dein#add('MaxMEllon/vim-jsx-pretty')
- call dein#add('wokalski/autocomplete-flow')
- call dein#add('slim-template/vim-slim')
- call dein#add('kchmck/vim-coffee-script')
- call dein#add('tpope/vim-haml')
- call dein#add('shmargum/vim-sass-colors')
- call dein#add('tpope/vim-fugitive')
  call dein#add('scrooloose/nerdtree')
  call dein#add('itchyny/lightline.vim')
- call dein#add('w0ng/vim-hybrid')
  call dein#add('mhartington/oceanic-next')
  if !has('nvim')
    call dein#add('roxma/nvim-yarp')
@@ -105,11 +96,6 @@ call denite#custom#var('grep', 'separator', ['--'])
 call denite#custom#var('grep', 'final_opts', [])
 
 """"""""""""""""""""
-" vim-javascript
-""""""""""""""""""""
-let g:javascript_plugin_flow = 1
-
-""""""""""""""""""""
 " NERDTree
 """"""""""""""""""""
 map <silent> <C-t> <esc>:NERDTreeToggle<cr>
@@ -121,12 +107,11 @@ let g:lightline = {
   \ 'active': {
   \   'left': [
   \     [ 'mode', 'paste' ],
-  \     [ 'gitbranch', 'readonly', 'fugitive', 'filename' ]
+  \     [ 'gitbranch', 'readonly', 'filename' ]
   \   ]
   \ },
   \ 'component_function': {
   \   'filename': 'LLFilename',
-  \   'gitbranch': 'fugitive#head'
   \ },
 \ }
 
